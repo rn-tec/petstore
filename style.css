@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: linear-gradient(245.59deg, #7dc98a 0%, #38703d 28.53%, #133917 75.52% );
+}
+
+
+.logo{
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo span{
+    color: blue;
+}
+
+.navlist{
+    display: flex;
+    padding-right: 40px;
+}
+
+.navlist a{
+    color: white;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+.hero{
+    height: 100%;
+    width: auto;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5%;
+}
+
+.hero-text h1 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: black;
+    margin: 0 0 45px;
+}
+
+.hero-text h1 span{
+    font-family: "Permanent Marker", cursive;
+    color: blue;
+}
+
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img img{
+    width: 500px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+section{
+    padding: 0 15%;
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+
+.about{
+    width: 100%;
+    height: 240vh;
+    padding: 50px;
+}
+
+.about .box{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about .box .card{
+    width: 300px;
+    height: 500px;
+    padding: 5px 10px;
+    margin: 0 15px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+    
+}
+
+.about .box .card:hover{
+    box-shadow: 3px 5px 20px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.about .box .card img{
+    width: 150px;
+}
+
+.about hr{
+    height: 2px;
+    background: #d98ca5;
+    border-radius: 5px;
+    margin: 30px 110px;
+}
+
+.about h1{
+    color: #4d9559;
+    text-align: center;
+    justify-content: center; 
+}
+
+.about a{
+    color: #4d9559;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.footer{
+    background: #24262b;
+    padding: 70px;
+}
+
+.footer .main{
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer_col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer_col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer_col ul li{
+    margin-bottom: 20px;
+}
+
+.footer_col ul li a{
+    text-decoration: none;
+    color: #6d6d6d;
+    cursor: pointer;
+}
+
+.footer_col ul li a:hover{
+    color: #4d9559;
+}
+
+.footer .last{
+    justify-content: center;
+    text-align: center;
+    color: #4d9559;
+}
+
+.icons{
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: inline-block;
+    margin: 30px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icons i:hover{
+    color: #4d9559;
+    transform: translateY(-5px);
+}
+
+@media(max-width : 1500px){
+    header{
+        padding: 10px 3px;
+        transition: .2s;
+    }
+    .hero-text {
+        padding-bottom: 30px;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media(max-width : 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media(max-width : 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h4{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .about .box .card img{
+        width: 100%;
+        height: auto;   
+    }
+}
+
+@media(max-width : 1000px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+        text-align: center;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .scroll-down{
+        display: none;
+    }
+    .about .box .card img{
+        width: 100%;
+        height: auto;   
+    }
+}
+
+@media(max-width : 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 5px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+
+@media(max-width : 680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .about .box .card img{
+        width: 100%;
+        height: auto;   
+    }
+}
